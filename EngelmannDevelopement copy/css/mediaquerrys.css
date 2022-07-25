@@ -1,0 +1,409 @@
+/*in media querries, the rem unit is bugged. "em" shall be used instead!
+1 rem = 1 em = 16px. if e.g. the required size is 1350px for the viewport, 
+the max width is 1350 / 16 = 84,375. It is rounded to 84 em*/
+
+
+/* ########################################
+   ##### Below 1344px (smaller Desktop)####
+   ########################################
+   84 * 16 = 1344.
+   */
+
+
+@media (max-width: 84em){
+    .hero{
+        max-width: 120rem;
+    }
+
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+
+    .grid--4-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--3-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+/*--------technologies we use--------*/
+    .subsection-technologies-01{
+        margin-top: 2.6rem;
+        padding: 80px;
+    }
+
+
+
+
+    /*--------application--------*/
+.application{
+    width: 55.6rem;
+    border-radius: 1rem;
+}
+/*--------development--------*/
+.code{
+    width: 55.6rem;
+    border-radius: 1rem;
+}
+/*--------design--------*/
+.blender-design{
+    width: 55.6rem;
+    border-radius: 1rem;
+}
+
+.pricing-btn{
+    font-size: 1.6rem;
+}
+
+}
+
+/* ########################################
+   ##### Below 1104px (Landscape Tablats)####
+   ########################################*/
+
+@media (max-width: 69em){
+    .grid--4-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--5-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--3-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /*--------technologies we use--------*/
+    .subsection-technologies-01{
+        margin-top: 2.6rem;
+        padding: 80px;
+    }
+    
+    html{
+        font-size: 50.5%;
+    } 
+/*--------application--------
+.application{
+    width: 45.6rem;
+    border-radius: 1rem;
+}
+/*--------development--------
+.code{
+    width: 45.6rem;
+    border-radius: 1rem;
+}
+/*--------design--------
+.blender-design{
+    width: 45.6rem;
+    border-radius: 1rem;
+}
+*/
+
+.code-img-box:nth-child(1) {
+    grid-row: 2;
+}
+
+.pricing-btn{
+    font-size: 1.6rem;
+}
+
+}
+
+/* ########################################
+   ##### Below 896px (Tablats) ############
+   ########################################*/
+
+@media (max-width: 56em) {
+    html{
+        font-size: 32.5%;
+    } 
+
+    .pricing-btn{
+        font-size: 1.6rem;
+    }
+    .pricing-btn-active{
+        font-size: 1.6rem;
+    }
+
+    .grid--2-cols{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-hero{
+        height: 60vh;
+    }
+
+    .code{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .blender-design{
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .design-headline{
+        margin-bottom: 0.6rem;
+    }
+
+    .btn-mobile-nav{
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    .header{
+        height: 14rem;
+    }
+
+    .main-nav{
+        background-color: rgb(0, 0, 0) ;
+        position: absolute;
+        top: 5.6rem;
+        left: 0; 
+        width: 100%;
+        height: 100vh;  
+        transform: translateX(100% );
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        
+        transition: all 0.5s ease-out;
+
+        /*hide*/
+        opacity: 0;
+
+        /*unaccesible to mouse and keyboard */
+        pointer-events: none;
+
+        /*hide from screenreaders */
+        visibility: hidden; 
+    }
+
+    .nav-open .main-nav{
+        margin-top: 3.6rem;
+        opacity: 1;
+        background-color: rgba(0,0,0,0.9);
+        pointer-events: auto;
+        visibility: visible;  
+        transform: translateX(0); 
+    }
+
+    .nav-open .icon-mobile-nav[alt="closing-icon"]{
+        display: block  ;
+    }
+
+    .nav-open .icon-mobile-nav[alt="list-icon"]{
+        display: none ;
+    }
+
+    .main-nav-list{
+        flex-direction: column ;
+    }
+    .section-hero{
+        opacity: 1;
+    }
+    /*must be fixed in javascript!!!
+    if the 'nav-open' class exists, the 
+    oppacity must be turned to 0!
+    
+    Otherwise the menu screen background will overlap with 
+    the original background image.*/
+
+
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 3rem;
+    }
+    .logo{
+        width: 2.6rem;
+    }
+    .icon-mobile-nav{
+        width: 4.6rem;
+    }
+
+
+
+    .design-text-left-01{
+        padding-top: 0rem;
+    }
+
+    .code-img-box:nth-child(1) {
+        grid-row: 2;
+    }
+
+    .box{
+        height: 150px;
+    }
+
+
+}
+
+/* ########################################
+   ##### Below 624px (Smaller Tablats) ####
+   ########################################*/
+
+@media (max-width: 39em){
+    html{
+        font-size: 30.6%;
+    } 
+    .logo{
+        width: 2.6rem;
+    }
+    .icon-mobile-nav{
+        width: 4.6rem;
+    }
+    .header{
+        height: 14rem;
+    }
+
+
+    .hero-description{
+        font-size: 2rem;
+    }
+
+    .hero-primary{
+        margin-top: 1rem;
+    }
+    .btn:link{
+        font-size: 2rem;
+    }
+
+    .design-text-left-01{
+        padding-top: 0rem;
+    }
+
+    .code-img-box:nth-child(1) {
+        grid-row: 2;
+    }
+
+    .nav-open .main-nav{
+        margin-top: 4.6rem;
+    }
+}
+
+/* ########################################
+   ########## Below 432px (Phones) ########
+   ########################################*/
+
+@media (max-width: 27em){
+    html{
+        font-size: 30.5%;
+    } 
+
+
+    .logo{
+        width: 1.6rem;
+    }
+    .icon-mobile-nav{
+        width: 2.6rem;
+    }
+    .header{
+        height: 14rem;
+    }
+    .hero-primary{
+        margin-top: 1rem;
+        font-size: 5.2rem;
+    }
+
+
+    /*.btn .btn-cta{
+        border: 4px solid #78CA71
+    }*/
+
+    /*.btn{
+        border: 1px solid #78CA71;
+        height: 1.6rem;
+        width: 13rem;
+        font-size: 0.2rem;
+        margin: 1rem 0;
+        padding: 2rem 3rem;
+        /*overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline;
+
+    }
+    .btn:link, .btn:visited{
+	font-size: 1.6rem;
+
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+
+
+	margin-top: 1.6rem;
+    }*/
+    
+
+    .hero-text-box{
+        font-size: 4.6rem;
+    }
+
+    .hero-description{
+        font-size: 1rem;
+    }
+
+    /*design*/
+
+    .design-text-left-01{
+        padding-top: 0rem;
+    }
+    .section-design{
+        font-size: 2rem;
+    }
+
+    /*Development*/
+
+    .subsection-development {
+        font-size: 4rem;
+    }
+
+    /*Icons*/
+    .subsection-icons {
+        font-size: 2rem;
+    }
+
+    .icon{
+        width: 4rem;
+    }
+
+    /*correction class*/
+
+    .text-correction{
+        font-size: 2rem;
+    }
+
+    /*application*/
+
+    .application-text-left {
+        font-size: 2rem;
+    }
+
+    /*technologies*/
+
+    .technologies-text{
+        font-size: 2rem;
+    }
+
+    .subsection-technologies-01 {
+        margin-top: -9.2rem;
+        padding: 43px;
+    }
+    .subsection-technologies-02 {
+        margin-top: -9.2rem;
+        padding: 43px;
+    }
+
+    .footer-socialmedia {
+        width: 3.6rem;
+    }
+
+    .code-img-box:nth-child(1) {
+        grid-row: 2;
+    }
+}

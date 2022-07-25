@@ -1,0 +1,720 @@
+
+
+/* ########################################
+   ############# Hero - Section ###########
+   ########################################*/
+
+.section-hero{
+    height: 100vh;
+    font-size: 2.6rem; 
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0 )), url(/img/darkmode-EDEV_landing-final.png);
+    background-position: center;
+    background-size: cover;
+    /*position: ;*/
+}
+
+.hero-text-box{
+    margin-left: 60%;
+    margin-top: 10vh;
+}
+  
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    align-items: center;
+    gap: 9.6rem;
+}
+
+.hero-primary{
+    /*float: right;*/
+    display: inline-block;
+    font-size: 3.6rem;
+    color: white ;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem ;
+    margin-right: 6.2rem;
+    margin-top: 19rem;
+    /*padding-left: 29rem;*/
+}
+
+.hero-description{
+    max-width: 39rem;
+    display: inline-block;
+    /*float: right;*/
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.05; 
+    margin-bottom: 2.8rem;
+    margin-right: 6.2rem;
+    /*padding-left: 29rem;*/
+}
+
+.btn:link, .btn:visited{
+    display: inline-block;
+    text-decoration: none;  
+    /*background-color: #28FFBF;*/
+    color: #fff; 
+    font-size: 1.2rem; 
+    padding: 1rem 3.3rem;
+    margin-top: 8rem;
+    
+    border-radius: 35px;
+    /*border: 2px solid #78CA71;*/
+    transition: background-color 0.3s;
+}
+
+.btn-cta{
+    background-color: #78CA71; 
+    color: #fff; 
+    border: 2px solid #78CA71;
+}
+
+.btn-cta:hover{
+    background-color: #23ce9a; 
+    color: #fff; 
+} 
+
+.btn-outline{
+    color: white; 
+    margin-left: 1rem; 
+    border: 2px solid #78CA71;
+}  
+
+.btn-outline:hover{
+    background-color: #78CA71;
+}
+
+/* #######################################
+   ############# Header ##################
+   #######################################*/
+
+.logo{
+    width: 1.6rem;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(228deg) brightness(102%) contrast(101%);
+    /*margin-top: 2rem;*/
+    /*margin-left: 2rem;*/
+    transition: 0.3s;
+}
+
+.logo:hover{
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+/* #######################################
+   ############# Navigation ##############
+   #######################################*/
+
+.main-nav{
+    color: white;
+    margin-top: 1.6rem;
+}
+
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    gap: 3.2rem;
+}
+
+.main-nav-element{
+    display: inline-block;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    justify-content: center;
+    display:inline-block;
+    padding: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active{
+    border-bottom: 2px solid #fff;
+}
+
+/*mobile nav*/
+
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav{
+    width: 3rem;
+}
+
+.icon-mobile-nav[alt="closing-icon"]{
+    display: none;
+}
+
+
+/* #######################################
+   ############# Section Design ##########
+   #######################################*/
+
+.section-design{
+    padding: 4.6rem 0;
+    /*background-color: orangered;*/
+}
+
+
+.section-design {
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.container{
+    max-width: 120rem;
+    padding: 0 3.2rem; 
+    margin: 0 auto;
+    
+}
+
+.design-headline{
+    margin-bottom: 4.6rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2.6rem;
+}
+
+.design-text-left-01{
+    padding-top: 5.5rem;
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+
+.design-text-left-02{
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+
+.design-text-left-03{
+    color: #fff;
+}
+
+.blender-design{
+    width: 80.6rem;
+    border-radius: 1rem;
+}
+
+.btn-cta-design{
+    background-color: #78CA71; 
+    color: #fff; 
+    /*margin-left: 11.5rem;*/
+    border: 2px solid #78CA71;
+}
+
+.btn-cta-design:hover{
+    background-color: #23ce9a; 
+    color: #fff; 
+} 
+
+
+.section-design div:nth-child(1n) {
+    /*background-color: aqua;*/
+    padding: 20px;
+    padding-right: 1.5rem;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+/*.section-design div:nth-child(1n):hover {
+    background-color: red;
+}*/
+
+.section-design div:nth-child(2n) {
+    /*background-color: blue;*/
+    empty-cells: hide; 
+}
+
+
+
+/* #######################################
+   ######### Section Development #########
+   #######################################*/
+
+
+.section-development{
+    padding-top: 5.5rem;
+}
+
+.subsection-development{
+    padding: 50px;
+    font-size: 1.5rem;
+}   
+
+.development-headline{
+    padding-top: 5.5rem;
+    font-size: 2.6rem;
+}
+
+.code{
+    width: 80.6rem;
+    border-radius: 1rem;
+}
+
+.subsection-development div:nth-child(1n) {
+    empty-cells: hide;
+}
+
+.subsection-development div:nth-child(2n) {
+    color: #fff;
+}
+
+.development-text-right{
+    color: #fff;
+    padding-top: 3.5rem;
+}
+/*---------- buttons ---------------*/
+.btn-cta-development{
+    background-color: #78CA71; 
+    color: #fff; 
+    border: 2px solid #78CA71;
+}
+
+.btn-cta-development:hover{
+    background-color: #23ce9a; 
+    color: #fff; 
+} 
+
+.btn-outline-development{
+    color: white; 
+    margin-left: 1rem; 
+    
+}  
+
+.btn-outline-development:hover{
+    background-color: #78CA71;
+}
+/*----------------------------------*/
+
+/* #######################################
+   ######### Section Icons ###############
+   #######################################*/
+
+.subsection-icons{
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.icon{
+    width: 2.6rem;
+    /*margin-left: 8rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;*/
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-text{
+    text-align: center;
+    margin-bottom: 1.6rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+/*------- grid ---------*/
+.subsection-icons div:nth-child(1n) {
+    color: #fff;
+    border-radius: 1rem;
+
+}
+
+.subsection-icons div:nth-child(1n):hover {
+    background-color: #151D3B;
+}
+
+.subsection-icons div:nth-child(2n) {
+    color: #fff;
+}
+
+.subsection-icons div:nth-child(3n) {
+    color: #fff;
+}
+
+.subsection-icons div:nth-child(4n) {
+    color: #fff;
+}
+
+.subsection-icons div:nth-child(5n) {
+    color: #fff;
+}
+
+
+/* #######################################
+   ######### Section Application #########
+   #######################################*/
+
+
+
+.subsection-web-application{
+    padding: 50px;
+    font-size: 1.5rem;
+} 
+
+.application{
+    width: 80.6rem;
+    border-radius: 1rem;
+}
+
+.application-headline{
+
+    padding-top: 5.5rem;
+    font-size: 2.6rem;
+}
+
+.application-text-left{
+    padding-top: 5.5rem;
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+/*------- grid ---------*/
+
+.subsection-web-application div:nth-child(1n) {
+    empty-cells: hide;
+    /*background-color: #23ce9a;*/
+    color: #fff;
+}
+
+.subsection-web-application div:nth-child(1n):hover {
+    background-color: #23ce9a;
+}
+
+.subsection-web-application div:nth-child(2n) {
+    color: #fff;
+    /*background-color: #78CA71;*/
+}
+
+/* #######################################
+   ######## Section Technologies  ########
+   #######################################*/
+
+
+.technologies-headline{
+    color: #fff;
+    padding-top: 2.5rem;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.technologies-text{
+    color: #fff;
+    padding-top: 5.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.section-technologies{
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.subsection-technologies-01{
+    margin-top: 2.6rem;
+    
+}
+
+.subsection-technologies-02{
+    margin-top: 2.6rem;
+    padding: 80px;
+}
+
+.tech-icon-top{
+    /*margin-left: 8rem;
+    margin-right: 8rem;*/
+    display: block;
+    margin: 0 auto;
+    width: 12.6rem;
+}
+
+.tech-icon-bottom{
+    /*margin-left: 14rem;
+    margin-right: 14rem;*/
+    display: block;
+    margin: 0 auto;
+    width: 10.6rem;
+}
+
+
+
+.py-icon{
+    /*margin-left: 8rem;
+    margin-right: 8rem;*/
+    display: block;
+    margin: 0 auto;
+    width: 10.6rem;
+    filter: brightness(150%);
+
+}
+
+
+/*------- grid 01 ---------*/
+
+.subsection-technologies-01 div:nth-child(1n) {
+    /*background-color: #23ce9a;*/
+    color: #fff;
+}
+
+.subsection-technologies-01 div:nth-child(2n) {
+
+    color: #fff;
+}
+
+.subsection-technologies-01 div:nth-child(3n) {
+
+    color: #fff;
+}
+
+.subsection-technologies-01 div:nth-child(4n) {
+
+    color: #fff;
+}
+
+/*------- grid 02 ---------*/
+
+.subsection-technologies-02 div:nth-child(1n) {
+    /*background-color: #23ce9a;*/
+    color: #fff;
+}
+
+.subsection-technologies-02 div:nth-child(2n) {
+
+    color: #fff;
+}
+
+.subsection-technologies-02 div:nth-child(3n) {
+
+    color: #fff;
+}
+
+
+/* #######################################
+   ######## Section Pricing  ########
+   #######################################*/
+
+
+.section-pricing{
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.cards{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.6rem;
+}
+
+.cards .card-active{
+    background: linear-gradient(
+        135deg,
+        rgba(163, 168, 240, 1) 0%,
+        rgba(105, 111, 221, 1) 100%
+    );
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transform: scale(1.1  );
+    z-index: 1 ;
+    border-radius: 1.6rem;
+}
+
+.UL{
+    margin: 2.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.bottom-bar{
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.pack{
+    list-style: none;
+    margin-bottom: 1.6rem;
+}
+
+#basic{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 2.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-shadow{
+    /*box-shadow: -5px 5px 15px 1px rgba(93, 112, 146, 0.644);*/
+    background-color: #151D3B;
+    border-radius: 1.6rem;
+}
+
+.pricing-btn{
+    margin-top: 1rem;
+    height: 2.6rem;
+    width: 13.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem ;
+    background:  linear-gradient( 
+        135deg,
+    rgba(163,168,240,1) 0%,
+    rgba(105,111,221,1) 100%);
+    color: #fff;
+    outline: none;
+    border: 0;
+    font-weight:  bold;
+    font-size: 1.6rem;
+}
+
+.pricing-btn-active{
+    margin-top: 1rem;
+    height: 2.6rem;
+    width: 13.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem ;
+    background-color: #fff;
+    color: black;
+    outline: none;
+    border: 0;
+    font-weight:  bold;
+}
+
+.icons-pricing{
+    margin-right: 1.6rem;
+    width: 1.6rem;
+}
+
+
+/* #######################################
+   ########### Section footer  ###########
+   #######################################*/
+
+.footer{
+    padding: 9.6rem 0;
+    color: #fff;
+}
+
+.footer-socialmedia{
+    width: 1.6rem;
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+}
+
+.copyright{
+    /*font-size: 1.4rem;*/
+    line-height: 1.6rem;
+    margin-top: 2.6rem;
+    color: #fff;
+}
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.contacts{
+    font-size: 1.4rem;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.adress{
+    margin-bottom: 2.4rem;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+
+/* #######################################
+   ########## Sticky NAVIGATION  #########
+   #######################################*/
+
+header.sticky{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0; 
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 9999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
+}
+
+header{
+    transition: 0.6s;
+}
+
+
+/*.sticky{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0; 
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 9999;
+    /*box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
+
+}*/
